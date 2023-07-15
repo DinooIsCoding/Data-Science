@@ -23,8 +23,10 @@
 #### Ranking all the movies based on their corresponding distances and chooses the top K nearest neighbors (movies) in order to recommend those, as the most similar movies, to a user
 
 ### III. Top-N Movies Recommender System
-##### Input: Rating data, Movie data, Number of top-N recommendations, Title of target movie
-##### Output: list of N most similar movie titles
+##### Input:
+###### Rating data, Movie data, Number of top-N recommendations, Title of target movie
+##### Output:
+###### List of N most similar movie titles
 ##### Step 1:
 ##### * Pre-precessing the rating and movie data
 ##### * Create a mapper between movie id and movie title
