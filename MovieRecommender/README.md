@@ -14,29 +14,26 @@
 #### The key motivation behind Item-based CF is that a customer will more likely to buy
 #### item that similar or related to the items being bought already.
 
-### Item-based recommender algorithms first analyze the ratings matrix to identify
-### different items relationships, and then use those to indirectly compute item
-### recommendations for users => INEFFICIENT (many pairs do not have any common users)
-####   The best solution is select only the pairs of items for thich the similarity can #### be computed by initially scanning all the items and for all the users that bought #### an item, identify the other items bought by those customers. Then efficiently
-#### compute the similarities only for these item pairs => focus on Item-Item CF
-#### recommender systems.
+#### **Item-based recommender algorithms first analyze the ratings matrix to identify different items relationships, and then use those to indirectly compute item recommendations for users => INEFFICIENT (many pairs do not have any common users)
 
-### 2. Top N-movies Recommender System
-### Using KNN method in order to identify the K closest instances (movies) given one target instance in our data (about movies). 
-### Ranking all the movies based on their corresponding distances and chooses the top K nearest neighbors (movies) in order to recommend those, as the most similar movies, to a user
+#### **The best solution is select only the pairs of items for thich the similarity can be computed by initially scanning all the items and for all the users that bought an item, identify the other items bought by those customers. Then efficiently compute the similarities only for these item pairs => focus on Item-Item CF recommender systems.
 
-## III. Top-N Movies Recommender System
-#### Input: Rating data, Movie data, Number of top-N recommendations, Title of target movie
-#### Output: list of N most similar movie titles
-#### Step 1:
-#### * Pre-precessing the rating and movie data
-#### * Create a mapper between movie id and movie title
-#### * Split the data into train and test sets
-#### * Transform the rating (train/test) data to a sparse movie-user matrix
+#### 2. Top N-movies Recommender System
+#### Using KNN method in order to identify the K closest instances (movies) given one target instance in our data (about movies). 
+#### Ranking all the movies based on their corresponding distances and chooses the top K nearest neighbors (movies) in order to recommend those, as the most similar movies, to a user
 
-#### Step 2:
-#### * Fit the model using movie-user sparse matrix (training set)
-#### * Use the input title to find matching movie index
+### III. Top-N Movies Recommender System
+##### Input: Rating data, Movie data, Number of top-N recommendations, Title of target movie
+##### Output: list of N most similar movie titles
+##### Step 1:
+##### * Pre-precessing the rating and movie data
+##### * Create a mapper between movie id and movie title
+##### * Split the data into train and test sets
+##### * Transform the rating (train/test) data to a sparse movie-user matrix
+
+##### Step 2:
+##### * Fit the model using movie-user sparse matrix (training set)
+##### * Use the input title to find matching movie index
 #### * Choose the best match from all matching movie indices
 #### * Predict the distances of neighbor (movies) from the target with the number of KNN (K equals to number of top recommendations)
 #### * Sort these N neighbor indices
