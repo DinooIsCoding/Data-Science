@@ -35,9 +35,9 @@
 ##### Step 2:
 ##### * Fit the model using movie-user sparse matrix (training set)
 ##### * Use the input title to find matching movie index
-#### * Choose the best match from all matching movie indices
-#### * Predict the distances of neighbor (movies) from the target with the number of KNN (K equals to number of top recommendations)
-#### * Sort these N neighbor indices
-#### * Transform these movie indeices back to the movie titles
-#### * Print these titles
-#### * Use the test set to calculate the prediction accuracy of the model
+##### * Choose the best match from all matching movie indices
+##### * Predict the distances of neighbor (movies) from the target with the number of KNN (K equals to number of top recommendations)
+##### * Sort these N neighbor indices
+##### * Transform these movie indeices back to the movie titles
+##### * Print these titles
+##### * Use the test set to calculate the prediction accuracy of the model
