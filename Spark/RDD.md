@@ -14,3 +14,5 @@ https://www.bigdatainrealworld.com/what-is-rdd/
 #### 2 types of RDD operations:
 ##### - Transformations
 ##### - Actions
+
+![image](https://github.com/dino-3007/Data-Science/assets/109076114/51eaf177-e800-485e-b09c-70af2ff2a71f)
