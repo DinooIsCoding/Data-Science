@@ -15,5 +15,6 @@ https://www.bigdatainrealworld.com/what-is-rdd/
 ##### - Transformations
 ![image](https://github.com/dino-3007/Data-Science/assets/109076114/51eaf177-e800-485e-b09c-70af2ff2a71f)
 ##### - Actions
+![image](https://github.com/dino-3007/Data-Science/assets/109076114/65198d1b-c405-43fa-8010-fc0a5a88da5c)
 
 
